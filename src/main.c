@@ -50,6 +50,7 @@ int main()
             else if (e.type == SDL_KEYUP && e.key.keysym.sym == SDLK_ESCAPE)
                 break;
 
+            SDL_RenderClear(renderer);
             SDL_RenderCopy(renderer, img, NULL, &r);
             SDL_RenderPresent(renderer);
         }

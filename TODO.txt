@@ -1,0 +1,20 @@
+TODO
+====
+
+[] - Build sample client that lets player move around the screen with keyboard
+[] - Get client to build for desktop target
+[] - Get client to build for emscripten/browser target
+
+[] - Build basic server that accepts connections and processes a simple packet
+[] - Update sample client to connect to server and send simple packet
+[] - Update client so it works from desktop and browser 
+[] - Get server to accept desktop and browser hosts
+
+
+
+Vim stuff
+=========
+[] - find a good debugger plugin and set it up
+[] - figure out how to trigger builds inside vim
+
+
