@@ -1,9 +1,9 @@
 TODO
 ====
 
-[] - Build sample client that lets player move around the screen with keyboard
-[] - Get client to build for desktop target
-[] - Get client to build for emscripten/browser target
+[X] - Build sample client that lets player move around the screen with keyboard
+[X] - Get client to build for desktop target
+[X] - Get client to build for emscripten/browser target
 
 [] - Build basic server that accepts connections and processes a simple packet
 [] - Update sample client to connect to server and send simple packet
