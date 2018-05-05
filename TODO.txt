@@ -10,6 +10,9 @@ TODO
 [] - Update client so it works from desktop and browser 
 [] - Get server to accept desktop and browser hosts
 
+[] - Build dynamic string library
+[] - Refactor list library based on desired usage patterns
+[] - Build hashtable library
 
 
 Vim stuff

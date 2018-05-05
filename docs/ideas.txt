@@ -1,0 +1,51 @@
+Chromancer - 
+
+Multiplayer ASCII game
+
+Players are Chromancers, which use magic based on colors.
+
+Start out greyscale and gain access to more colors as they advance.
+Can mix and match colors to create their own spells/effects.
+
+Also include some sort of rune-based magic? Mages can only use N runes at any one time? 
+Mages can put together runes in different orders to change spell effects?
+
+How are we going to do multiplayer?
+    - Just let players move as much as they want.
+    - Players get a certain number of action points per minute? Per 20s?
+
+Maybe do something like splatoon, where teams need to cover the arena in their color?
+Or maybe that's just something that teams/players can do. Those would be like AoE effects. 
+Different colored areas have different effects on players, depending on their color affinity?
+
+Team-based multiplayer. Teams need to cover as much area with their color as they can to win.
+Do they need to cover the entire map? I think that would be impossible, and not enough fun.
+I think matches should be timed, and the team with the largest area covered wins.
+
+All spells are AoE?
+Portals that teleport teammates to other places?
+Portals can be destroyed by other teams.
+Players can take out other players. Not sure how yet.
+ - AoE effects that sap energy from other players?
+Maybe players have to charge their color reserves?
+
+Players have energy/life stat and mana stat. Mana will affect their casting, while life will affect their existence.
+- Life is sapped from other color squares, and from direct spell damage.
+- Mana is sapped from casting spells. Mana is regained over time, and accelerated on squares of your color. Mana regen is slower on neutral squares, and even slower on squares of other colors.
+- Losing all life will send you back to your base, where you will respawn after a short delay.
+    - Losing your life will cause your avatar to explode and spray your killer's color over an area.
+
+- Concept is that this is a game played by mages in training. Maybe your team represents a Wizard School?
+    - Players don't die when they get eliminated, they just respawn. Could even have a one-life-only mode with no respawns.
+
+- Scoring Ideas:
+    - Based on total covered area at end of match. Matches are 5 minutes?
+    - Colored squares earn points over time. The first team to a given score wins? The team with the most points at the end of time wins?
+
+Can we "upgrade" squares to make them worth more? Perhaps there are special areas of the map that are more valuable to hold.
+
+
+
+
+
+
