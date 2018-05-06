@@ -11,21 +11,19 @@
 
 #define SERVER_PORT         "1313"
 #define MAX_BUFFER_SIZE     1024
+#define BACKLOG             10
 
-
-void *get_in_addr(struct sockaddr *sa);
 
 
 // -- Public Interface Methods --
 
-struct network_context_t * 
-net_initialize()
+struct network_context_t * net_initialize()
 {
     // Allocate our context
     struct network_context_t *ctx = calloc(1, sizeof(struct network_context_t));
 
     // Get our IP and setup our networking environment
-    struct addrinfo hints = {.ai_family = AF_UNSPEC, .ai_socktype = SOCK_DGRAM, .ai_flags = AI_PASSIVE};
+    struct addrinfo hints = {.ai_family = AF_UNSPEC, .ai_socktype = SOCK_STREAM, .ai_flags = AI_PASSIVE};
 
     struct addrinfo *serv_info = NULL;
     struct addrinfo *p = NULL;
@@ -50,7 +48,7 @@ net_initialize()
         }
 
         // If we get here, we're bound, so we're done looking
-        ctx->read_socketfd = sockfd;
+        ctx->listen_socketfd = sockfd;
         break;
     }
 
@@ -64,29 +62,36 @@ net_initialize()
     return ctx;
 }
 
-int 
-net_listen(struct network_context_t *ctx)
+int net_listen(struct network_context_t *ctx)
 {
     // Listen for connections and accept them as they come in
+    if (listen(ctx->listen_socketfd, BACKLOG) == -1) {
+        fprintf(stderr, "Failed to listen on socket\n");
+        return -1;
+    } 
+
+    printf("Waiting for connections...\n");
+
     return 0;
 }
 
-network_packet_t *
-net_read_packet(struct network_context_t *ctx) 
+network_packet_t * net_read_packet(struct network_context_t *ctx) 
 {
-
+    // TODO: Implement for realz
+    return NULL;
 }
 
-int 
-net_shutdown(struct network_context_t *ctx)
+int net_shutdown(struct network_context_t *ctx)
 {
     // Shut down all connections
     // Clean up context
+    // TODO: Implement for realz
+
+    return 0;
 }
 
 // Get socket address, IPv4 or IPv6
-void *
-get_in_addr(struct sockaddr *sa)
+void * get_in_addr(struct sockaddr *sa)
 {
     if (sa->sa_family == AF_INET) {
         return &(((struct sockaddr_in *)sa)->sin_addr);
